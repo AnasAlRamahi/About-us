@@ -1,4 +1,8 @@
 
+html {
+    scroll-behavior: smooth;
+}
+
 footer p {
     text-align: center;
 }
@@ -11,6 +15,7 @@ body {
 header {
     margin-bottom: 0 0 40px 20px;
     background-color: #ce1212; 
+    color: white;
 }
 
 header h1 {
