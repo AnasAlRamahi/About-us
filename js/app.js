@@ -114,7 +114,7 @@ for (let i = 0; i < 4; i++){
     if(i !== 3){
       alert('Too high! try again...');
     }else{
-      alert('wrong answer!')
+      alert('wrong answer!');
     }
   }else if(userNumber < rightAnswer){
     if(i !== 3){
@@ -145,22 +145,27 @@ if(!rightAttempt){
 
 let drinks = ['tea', 'coffee', 'nescafe', 'water', 'pepsi', 'cola'];
 let drinkGuess = prompt('What kind of drink do I like to use? You have 6 guesses');
-let rightDrinkGuess = false;
+// let rightDrinkGuess = false;
 for (let i = 0; i < 6; i++){
-  for(let j = 0; j < drinks.length-1; j++){
+  for(var j = 0; j < drinks.length-1; j++){
     if (drinkGuess === drinks[j]){
       alert('Right Answer!');
       score++;
-      rightDrinkGuess = true;
+      // rightDrinkGuess = true;
+      i = 7;
       break;
     }
   }
-  if(rightDrinkGuess){
-    break;
+  // drinkGuess = prompt('Guess again..');
+  if(j === drinks.length-1){
+    drinkGuess = prompt('Guess again..');
   }
-  if(i !== drinks.length - 2){
-    drinkGuess = prompt('You guessed it wrong! Guess again...');
-  }
+  // if(rightDrinkGuess){
+  //   break;
+  // }
+  // if(i !== drinks.length - 1){
+  //   drinkGuess = prompt('You guessed it wrong! Guess again...');
+  // }
 }
 
 let displayDrinks = '';
