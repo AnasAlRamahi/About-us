@@ -32,6 +32,21 @@ header h3 {
 header h3 span {
     font-weight: bold;
 }
+header section {
+    display: inline-block;
+    margin-right: 50px;
+}
+
+header nav {
+    display: inline;
+    float: right;
+    vertical-align: baseline;
+}
+
+header nav ul li {
+    display: inline;
+    margin: 10px 20px 20px 20px;
+}
 
 main {
     margin: 40px;
