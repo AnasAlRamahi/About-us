@@ -174,7 +174,7 @@ function question7(){
       }
     }
     // drinkGuess = prompt('Guess again..');
-    if(j === drinks.length-1){
+    if(j === drinks.length){
       drinkGuess = prompt('Guess again..');
     }
   // if(rightDrinkGuess){
