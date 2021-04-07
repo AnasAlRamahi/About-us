@@ -163,8 +163,9 @@ function question7(){
   let drinks = ['tea', 'coffee', 'nescafe', 'water', 'pepsi', 'cola'];
   let drinkGuess = prompt('What kind of drink do I like to use? You have 6 guesses');
   // let rightDrinkGuess = false;
+  let j =0;
   for (let i = 0; i < 6; i++){
-    for(var j = 0; j < drinks.length; j++){
+    for(j = 0; j < drinks.length; j++){
       if (drinkGuess === drinks[j]){
         alert('Right Answer!');
         score++;
