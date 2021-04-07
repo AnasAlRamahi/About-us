@@ -159,37 +159,38 @@ question6();
 
 
 
-
-let drinks = ['tea', 'coffee', 'nescafe', 'water', 'pepsi', 'cola'];
-let drinkGuess = prompt('What kind of drink do I like to use? You have 6 guesses');
-// let rightDrinkGuess = false;
-for (let i = 0; i < 6; i++){
-  for(var j = 0; j < drinks.length-1; j++){
-    if (drinkGuess === drinks[j]){
-      alert('Right Answer!');
-      score++;
-      // rightDrinkGuess = true;
-      i = 7;
-      break;
+function question7(){
+  let drinks = ['tea', 'coffee', 'nescafe', 'water', 'pepsi', 'cola'];
+  let drinkGuess = prompt('What kind of drink do I like to use? You have 6 guesses');
+  // let rightDrinkGuess = false;
+  for (let i = 0; i < 6; i++){
+    for(var j = 0; j < drinks.length; j++){
+      if (drinkGuess === drinks[j]){
+        alert('Right Answer!');
+        score++;
+        // rightDrinkGuess = true;
+        i = 7;
+        break;
+      }
     }
-  }
-  // drinkGuess = prompt('Guess again..');
-  if(j === drinks.length-1){
-    drinkGuess = prompt('Guess again..');
-  }
+    // drinkGuess = prompt('Guess again..');
+    if(j === drinks.length-1){
+      drinkGuess = prompt('Guess again..');
+    }
   // if(rightDrinkGuess){
   //   break;
   // }
   // if(i !== drinks.length - 1){
   //   drinkGuess = prompt('You guessed it wrong! Guess again...');
   // }
-}
+  }
 
-let displayDrinks = '';
-for (let i = 0; i < drinks.length; i++){
-  displayDrinks += drinks[i] + ' ';
+  let displayDrinks = '';
+  for (let i = 0; i < drinks.length; i++){
+    displayDrinks += drinks[i] + ' ';
+  }
+  alert('The right answers were: ' + displayDrinks);
 }
-alert('The right answers were: ' + displayDrinks);
-
+question7();
 alert('End of game, you scored ' + score +' out of 7');
 
