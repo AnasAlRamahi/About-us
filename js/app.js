@@ -95,23 +95,27 @@ function question4(){
 }
 question4();
 
-let questionFive = prompt('Am I married?', 'yes (y)  or  no(n)').toLowerCase();
-switch(questionFive){
-case 'yes':
-case 'y':
-  alert('Wrong answer!');
-  //  console.log('Wrong answer!');
-  break;
-case 'no':
-case 'n':
-  alert('Right answer!');
-  //  console.log('Right answer!');
-  score++;
-  break;
-default:
-  alert('Please, answer the questoin next time :P');
+
+function question5(){
+  let questionFive = prompt('Am I married?', 'yes (y)  or  no(n)').toLowerCase();
+  switch(questionFive){
+  case 'yes':
+  case 'y':
+    alert('Wrong answer!');
+    //  console.log('Wrong answer!');
+    break;
+  case 'no':
+  case 'n':
+    alert('Right answer!');
+    //  console.log('Right answer!');
+    score++;
+    break;
+  default:
+    alert('Please, answer the questoin next time :P');
 //  console.log('Please, answer the questoin next time :P');
+  }
 }
+question5();
 
 let userNumber = parseInt(prompt('Can you guess the number? You got 4 attempts.'));
 let rightAnswer = 365;
