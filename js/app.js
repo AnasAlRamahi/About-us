@@ -6,26 +6,27 @@ document.write('<h3>' + nameOut + '</h3>');
 
 let score = 0 ;
 
-
-let questionOne = prompt('Am I 22 years old?', 'yes (y)  or  no(n)').toLowerCase();
-switch(questionOne){
-case 'yes':
-case 'y':
-  alert('Right answer!');
-  //  console.log('Right answer!');
-  score++;
-  break;
-case 'no':
-case 'n':
-  alert('Wrong answer!');
-  //  console.log('Wrong answer!');
-  break;
-default:
-  alert('Please, answer the questoin next time :P');
+function question1(){
+  let questionOne = prompt('Am I 22 years old?', 'yes (y)  or  no(n)').toLowerCase();
+  switch(questionOne){
+  case 'yes':
+  case 'y':
+    alert('Right answer!');
+    //  console.log('Right answer!');
+    score++;
+    break;
+  case 'no':
+  case 'n':
+    alert('Wrong answer!');
+    //  console.log('Wrong answer!');
+    break;
+  default:
+    alert('Please, answer the questoin next time :P');
   //  console.log('Please, answer the questoin next time :P');
 
+  }
 }
-
+question1();
 
 let questionTwo = prompt('Have I worked in the IT field before?', 'yes (y)  or  no(n)').toLowerCase();
 switch(questionTwo){
