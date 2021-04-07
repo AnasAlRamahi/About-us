@@ -73,24 +73,27 @@ function question3(){
 }
 question3();
 
-let questionFour = prompt('Have I graduated from the university or not?', 'yes (y)  or  no(n)').toLowerCase();
-switch(questionFour){
-case 'yes':
-case 'y':
-  alert('Right answer!');
-  //  console.log('Right answer!');
-  score++;
-  break;
-case 'no':
-case 'n':
-  alert('Wrong answer!');
-  //  console.log('Wrong answer!');
-  break;
-default:
-  alert('Please, answer the questoin next time :P');
-//  console.log('Please, answer the questoin next time :P');
-}
 
+function question4(){
+  let questionFour = prompt('Have I graduated from the university or not?', 'yes (y)  or  no(n)').toLowerCase();
+  switch(questionFour){
+  case 'yes':
+  case 'y':
+    alert('Right answer!');
+    //  console.log('Right answer!');
+    score++;
+    break;
+  case 'no':
+  case 'n':
+    alert('Wrong answer!');
+    //  console.log('Wrong answer!');
+    break;
+  default:
+    alert('Please, answer the questoin next time :P');
+//  console.log('Please, answer the questoin next time :P');
+  }
+}
+question4();
 
 let questionFive = prompt('Am I married?', 'yes (y)  or  no(n)').toLowerCase();
 switch(questionFive){
