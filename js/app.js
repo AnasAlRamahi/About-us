@@ -28,25 +28,28 @@ function question1(){
 }
 question1();
 
-let questionTwo = prompt('Have I worked in the IT field before?', 'yes (y)  or  no(n)').toLowerCase();
-switch(questionTwo){
-case 'yes':
-case 'y':
-  alert('Wrong answer!');
-  //  console.log('Wrong answer!');
-  break;
-case 'no':
-case 'n':
-  alert('Right answer!');
-  //  console.log('Right answer!');
-  score++;
-  break;
-default:
-  alert('Please, answer the questoin next time :P');
+
+function question2(){
+  let questionTwo = prompt('Have I worked in the IT field before?', 'yes (y)  or  no(n)').toLowerCase();
+  switch(questionTwo){
+  case 'yes':
+  case 'y':
+    alert('Wrong answer!');
+    //  console.log('Wrong answer!');
+    break;
+  case 'no':
+  case 'n':
+    alert('Right answer!');
+    //  console.log('Right answer!');
+    score++;
+    break;
+  default:
+    alert('Please, answer the questoin next time :P');
   //  console.log('Please, answer the questoin next time :P');
 
+  }
 }
-
+question2();
 
 let questionThree = prompt('Do I like to travel the world?', 'yes (y)  or  no(n)').toLowerCase();
 switch(questionThree){
