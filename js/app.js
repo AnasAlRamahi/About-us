@@ -117,42 +117,45 @@ function question5(){
 }
 question5();
 
-let userNumber = parseInt(prompt('Can you guess the number? You got 4 attempts.'));
-let rightAnswer = 365;
-let rightAttempt = false;
-for (let i = 0; i < 4; i++){
-  if (i !== 0){
-    userNumber = parseInt(prompt('Guess again...'));
-  }
-  if(userNumber > rightAnswer){
-    if(i !== 3){
-      alert('Too high! try again...');
-    }else{
-      alert('wrong answer!');
-    }
-  }else if(userNumber < rightAnswer){
-    if(i !== 3){
-      alert('Too Low! try again...');
-    }else{
-      alert('wrong answer!');
-    }
-  }else if(userNumber === rightAnswer){
-    alert('Right Answer!!!');
-    rightAttempt = true;
-    score++;
-    break;
-  }else{
-    if(i !== 3){
-      alert('Write a Numeric value to guess...');
-    }else{
-      alert('wrong answer!');
-    }
-  }
-}
-if(!rightAttempt){
-  alert('The right answer is ' + rightAnswer);
-}
 
+function question6(){
+  let userNumber = parseInt(prompt('Can you guess the number? You got 4 attempts.'));
+  let rightAnswer = 365;
+  let rightAttempt = false;
+  for (let i = 0; i < 4; i++){
+    if (i !== 0){
+      userNumber = parseInt(prompt('Guess again...'));
+    }
+    if(userNumber > rightAnswer){
+      if(i !== 3){
+        alert('Too high! try again...');
+      }else{
+        alert('wrong answer!');
+      }
+    }else if(userNumber < rightAnswer){
+      if(i !== 3){
+        alert('Too Low! try again...');
+      }else{
+        alert('wrong answer!');
+      }
+    }else if(userNumber === rightAnswer){
+      alert('Right Answer!!!');
+      rightAttempt = true;
+      score++;
+      break;
+    }else{
+      if(i !== 3){
+        alert('Write a Numeric value to guess...');
+      }else{
+        alert('wrong answer!');
+      }
+    }
+  }
+  if(!rightAttempt){
+    alert('The right answer is ' + rightAnswer);
+  }
+}
+question6();
 
 
 
