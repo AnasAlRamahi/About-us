@@ -12,17 +12,17 @@ function question1(){
   case 'yes':
   case 'y':
     alert('Right answer!');
-    //  console.log('Right answer!');
+    console.log('Right answer!');
     score++;
     break;
   case 'no':
   case 'n':
     alert('Wrong answer!');
-    //  console.log('Wrong answer!');
+    console.log('Wrong answer!');
     break;
   default:
     alert('Please, answer the questoin next time :P');
-  //  console.log('Please, answer the questoin next time :P');
+    console.log('Please, answer the questoin next time :P');
 
   }
 }
@@ -35,17 +35,17 @@ function question2(){
   case 'yes':
   case 'y':
     alert('Wrong answer!');
-    //  console.log('Wrong answer!');
+    console.log('Wrong answer!');
     break;
   case 'no':
   case 'n':
     alert('Right answer!');
-    //  console.log('Right answer!');
+    console.log('Right answer!');
     score++;
     break;
   default:
     alert('Please, answer the questoin next time :P');
-  //  console.log('Please, answer the questoin next time :P');
+    console.log('Please, answer the questoin next time :P');
 
   }
 }
@@ -58,17 +58,17 @@ function question3(){
   case 'yes':
   case 'y':
     alert('Right answer!');
-    //  console.log('Right answer!');
+    console.log('Right answer!');
     score++;
     break;
   case 'no':
   case 'n':
     alert('Wrong answer!');
-    //  console.log('Wrong answer!');
+    console.log('Wrong answer!');
     break;
   default:
     alert('Please, answer the questoin next time :P');
-  //  console.log('Please, answer the questoin next time :P');
+    console.log('Please, answer the questoin next time :P');
   }
 }
 question3();
@@ -80,17 +80,17 @@ function question4(){
   case 'yes':
   case 'y':
     alert('Right answer!');
-    //  console.log('Right answer!');
+    console.log('Right answer!');
     score++;
     break;
   case 'no':
   case 'n':
     alert('Wrong answer!');
-    //  console.log('Wrong answer!');
+    console.log('Wrong answer!');
     break;
   default:
     alert('Please, answer the questoin next time :P');
-//  console.log('Please, answer the questoin next time :P');
+    console.log('Please, answer the questoin next time :P');
   }
 }
 question4();
@@ -102,17 +102,17 @@ function question5(){
   case 'yes':
   case 'y':
     alert('Wrong answer!');
-    //  console.log('Wrong answer!');
+    console.log('Wrong answer!');
     break;
   case 'no':
   case 'n':
     alert('Right answer!');
-    //  console.log('Right answer!');
+    console.log('Right answer!');
     score++;
     break;
   default:
     alert('Please, answer the questoin next time :P');
-//  console.log('Please, answer the questoin next time :P');
+    console.log('Please, answer the questoin next time :P');
   }
 }
 question5();
@@ -162,28 +162,19 @@ question6();
 function question7(){
   let drinks = ['tea', 'coffee', 'nescafe', 'water', 'pepsi', 'cola'];
   let drinkGuess = prompt('What kind of drink do I like to use? You have 6 guesses');
-  // let rightDrinkGuess = false;
   let j =0;
   for (let i = 0; i < 6; i++){
     for(j = 0; j < drinks.length; j++){
       if (drinkGuess === drinks[j]){
         alert('Right Answer!');
         score++;
-        // rightDrinkGuess = true;
         i = 7;
         break;
       }
     }
-    // drinkGuess = prompt('Guess again..');
     if(j === drinks.length){
       drinkGuess = prompt('Guess again..');
     }
-  // if(rightDrinkGuess){
-  //   break;
-  // }
-  // if(i !== drinks.length - 1){
-  //   drinkGuess = prompt('You guessed it wrong! Guess again...');
-  // }
   }
 
   let displayDrinks = '';
